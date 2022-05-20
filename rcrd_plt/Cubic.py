@@ -29,3 +29,9 @@ def cubic(t,a,b,c):
     return a + (3*(b-a)/c**2)*t**2 - (2*(b-a)/c**3)*t**3
 
 y = cubic(x,qi,qf,tf)
+
+plt.figure()
+plt.plot(x,y,'g',linestyle='-')
+plt.text(1,1.5,'q(t) = a + (3*(b-a)/c**2)*t**2 - (2*(b-a)/c**3)*t**3')
+plt.grid(True)
+plt.show()
