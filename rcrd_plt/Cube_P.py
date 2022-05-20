@@ -26,8 +26,8 @@ tf = float(input('tf = ')) # final time
 
 x = np.arange(ti,tf,0.05)
 
-def cubic(t,a,b,z):
-    return a + (3*(b-a)/z**2)*t**2 - (2*(b-a)/z**3)*t**3
+def cubic(t,a,b,c):
+    return a + (3*(b-a)/c**2)*t**2 - (2*(b-a)/c**3)*t**3
 
 y = cubic(x,qi,qf,tf)
 
